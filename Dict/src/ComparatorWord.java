@@ -1,5 +1,6 @@
 import java.util.Comparator;
 
+// test
 public class ComparatorWord implements Comparator<Word> {
     @Override
     public int compare(Word a, Word b) {
