@@ -11,20 +11,22 @@ public class DictionaryManagement extends Dictionary {
     public void insertFromCommandline() {
 
         Scanner input = new Scanner(System.in);
-        int nums = input.nextInt();
+        Scanner input2 = new Scanner(System.in);
+        int nums = input2.nextInt();
         while (0 < nums) {
             String line = input.nextLine();
-            String[] rows = line.split(",");
+            String[] rows = line.split("\t");
             String word_target = rows[0];
             String word_explain = rows[1];
             super.addWord(word_target, word_explain);
+            nums--;
         }
     }
     public void insertFromFile(String filePath) {
         String line;
         String split = "\t";
         try {
-            BufferedReader br = new BufferedReader(new FileReader("src\\dictionaries.txt"));
+            BufferedReader br = new BufferedReader(new FileReader("Dict/src/dictionaries.txt"));
             while ((line = br.readLine()) != null) {
                 String[] row = line.split(split);
                 super.addWord(row[0], row[1]);
