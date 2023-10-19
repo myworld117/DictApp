@@ -6,6 +6,7 @@ public class DictionaryCommandline {
         this.DictionaryManage = new DictionaryManagement();
         DictionaryManage.insertFromFile("src\\english.txt");
     }
+    //
     public void showAllWords() {
         System.out.printf("%-6s%c %-15s%c %-20s%n","No", '|' ,"English", '|', "Vietnamese");
         for (int i = 0; i < DictionaryManage.getDictionary().size(); i++) {
