@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
-// Test commit
+
 public class Dictionary {
     protected ArrayList<Word> wordArrayList  ;
     public Dictionary() {
@@ -21,3 +21,6 @@ public class Dictionary {
     }
 
 }
+
+
+// Test commit
