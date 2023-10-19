@@ -80,4 +80,4 @@ public class DictionaryManagement extends Dictionary {
 
 }
 
-// Ko co gi
+// Khong co gi
