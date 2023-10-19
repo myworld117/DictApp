@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
+//ko co gi dau
 public class Dictionary {
     protected ArrayList<Word> wordArrayList  ;
     public Dictionary() {
